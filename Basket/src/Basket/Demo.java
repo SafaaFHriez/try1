@@ -8,6 +8,9 @@ public class Demo {
        Basket<Double,Double> b = new Basket<>();
       b.add(4.5);
       b.add(9.8);
-        System.out.println(b.toString());
+      System.out.println(b.toString());
+      b.deleteLastItem();
+      b.add(77.0);
+      System.out.println(b.toString());
     }
 }
