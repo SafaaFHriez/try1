@@ -2,13 +2,13 @@
 package Basket;
 
 
-public class Basket<T,R> {
-    private T customer;  
+public class Basket<R> {
+    private String customer;  
     private R items[];
     private int lastIndex;
     
     public Basket() {
-        
+        customer = "No name";
         items = (R[])new Object[50];
         lastIndex = -1;        
     }
@@ -56,11 +56,11 @@ public class Basket<T,R> {
     
     
     
-      public void setCustomer(T customer) {
+      public void setCustomer(String customer) {
         this.customer = customer;
     }
 
-    public T getCustomer() {
+    public String getCustomer() {
         return customer;
     }
 
